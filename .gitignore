@@ -1,0 +1,13 @@
+# Secrets — never commit
+.env
+*.env
+!*.env.example
+*.key
+*.pem
+
+# Container config / runtime data (large, machine-specific, holds tokens)
+**/config/
+
+# OS / editor cruft
+.DS_Store
+*.swp
