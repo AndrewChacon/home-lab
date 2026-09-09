@@ -1,28 +1,31 @@
 # Home Lab
 
-Self-hosted services running on a single machine, virtualized with Proxmox.
-Built incrementally and documented as I go, so any part can be rebuilt from this repo.
+Self-hosted media server built on Proxmox, running Jellyfin and a NAS with a web UI on a  Debian Virtual Machine with remote access over Tailscale. 
+Media is ripped from physical DVDs.
 
-## The stack at a glance
-- **Oracle** — the physical machine, running Proxmox VE (the hypervisor).
-- **plex** — a Debian VM on Oracle that runs Docker and will host my services.
-- Services run as Docker containers inside the `plex` VM.
+## Stack at a glance
 
-## Docs
-| File | What's in it |
-|---|---|
-| [docs/server-overview.md](docs/server-overview.md) | Full specs of the host + inventory of every VM and service (start here) |
-| [docs/proxmox-oracle.md](docs/proxmox-oracle.md) | The Proxmox host "Oracle" — install, config, how to manage it |
-| [docs/plex-vm.md](docs/plex-vm.md) | The Debian VM "plex" — setup, Docker, how it's configured |
-| [docs/nas-fileshare.md](docs/nas-fileshare.md) | Planned: NAS / file share over the LAN (Samba) |
+| Layer | Technology | Notes |
+|---|---|---|
+| Hypervisor | Proxmox VE | Bare metal on the host "Oracle" |
+| Guest OS | Debian (Trixie) | VM named `plex` |
+| Containers | Docker + Compose | Runs the media server |
+| Media server | Jellyfin | Replaced Plex (see jellyfin doc) |
+| Remote access | Tailscale | Private mesh VPN, no ports exposed |
+| Ripping | MakeMKV + mkvtoolnix | On the Parrot desktop |
 
-## Compose files
-- [compose/plex/](compose/plex/) — Plex media server
-- [compose/samba/](compose/samba/) — Samba file share (planned)
+## Documentation index
 
-Each service folder has a `docker-compose.yml` and a `.env.example`. Copy the
-example to `.env`, fill in real values, then `docker compose up -d`.
+1. [01 - Proxmox](01-proxmox.md)
+2. [02 - VM storage](02-debian-vm-storage.md)
+3. [03 - Jellyfin](03-jellyfin.md)
+4. [04 - Tailscale](04-tailscale.md)
+5. [05 - Ripping DVDs](05-ripping-dvds.md)
+6. [06 - NAS](06-nas.md)
 
-## ⚠️ Secrets
-Never commit real passwords, tokens, or API keys. Those live in `.env` files,
-which are git-ignored. Only the `.env.example` templates get committed.
+## Key addresses (fill in)
+
+- Oracle (Proxmox) web UI: `https://<oracle-ip>:8006`
+- plex VM LAN address: `192.168.4.163`
+- plex VM Tailscale address: `100.73.24.65`
+- Jellyfin: `http://<address>:8096`

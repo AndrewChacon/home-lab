@@ -4,20 +4,95 @@
     "type": "split",
     "children": [
       {
-        "id": "5c4f1e8cc7dc3750",
+        "id": "16e963ec539b9a6a",
         "type": "tabs",
         "children": [
           {
-            "id": "02af50ebce3fb7c3",
+            "id": "a8c0c8978f392663",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "README"
+            }
+          },
+          {
+            "id": "191230f36a1d5a08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-proxmox.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-proxmox"
+            }
+          },
+          {
+            "id": "266be19557cf87ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-debian-vm-storage.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02-debian-vm-storage"
+            }
+          },
+          {
+            "id": "c58204e18080a9ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-jellyfin.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03-jellyfin"
+            }
+          },
+          {
+            "id": "8c22a8eb6fb47613",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-tailscale.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04-tailscale"
+            }
+          },
+          {
+            "id": "00cf0ec8ea84b918",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -79,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "f5c257fbd3d4dc7d",
@@ -181,6 +256,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "02af50ebce3fb7c3",
-  "lastOpenFiles": []
+  "active": "00cf0ec8ea84b918",
+  "lastOpenFiles": [
+    "06-nas.md",
+    "README.md",
+    "docs/05-ripping-dvds.md",
+    "docs",
+    "05-ripping-dvds.md",
+    "04-tailscale.md",
+    "03-jellyfin.md",
+    "02-debian-vm-storage.md",
+    "01-proxmox.md",
+    "README (1).md",
+    "docs/server-overview.md",
+    "docs/proxmox-oracle.md",
+    "docs/plex-vm.md",
+    "docs/nas-fileshare.md"
+  ]
 }
