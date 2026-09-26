@@ -38,3 +38,7 @@ Media is ripped from physical DVDs and organized for Jellyfin library scanner.
 - Add backups/snapshots
 - Self host a password manager to store service credentials
 - Add external storage to backup redundancy 
+- Finish Active Directory lab
+- pfSense/OPNsense + VLANs
+- Monitoring
+- Ticketing system

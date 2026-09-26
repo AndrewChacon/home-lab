@@ -11,3 +11,5 @@
 # OS / editor cruft
 .DS_Store
 *.swp
+sensitive.md
+

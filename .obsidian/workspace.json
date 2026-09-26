@@ -22,6 +22,34 @@
             }
           },
           {
+            "id": "12f0d242c0ca407e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07-active-directory.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07-active-directory"
+            }
+          },
+          {
+            "id": "09435d8f03dc311c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07-active-directory.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "07-active-directory"
+            }
+          },
+          {
             "id": "191230f36a1d5a08",
             "type": "leaf",
             "state": {
@@ -105,7 +133,8 @@
               "title": "06-nas"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -167,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5c257fbd3d4dc7d",
@@ -270,14 +298,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "a8c0c8978f392663",
+  "active": "09435d8f03dc311c",
   "lastOpenFiles": [
+    "README.md",
+    "sensitive.md",
+    "07-active-directory.md",
+    "05-ripping-dvds.md",
     "03-jellyfin.md",
     "02-debian-vm-storage.md",
     "01-proxmox.md",
-    "README.md",
     "06-nas.md",
-    "05-ripping-dvds.md",
     "docs/05-ripping-dvds.md",
     "docs",
     "04-tailscale.md",
